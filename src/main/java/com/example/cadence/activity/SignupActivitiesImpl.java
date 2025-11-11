@@ -35,4 +35,14 @@ public class SignupActivitiesImpl implements SignupActivities {
         logger.info("🔄 COMPENSATION: Deleting user {}...", email);
         // Simulate database interaction to roll back user creation
     }
+
+    @Override
+    public void sendConfirmationEmail(String customerId) {
+        logger.info("✉️ ACTIVITY: Sending confirmation email to {}...", customerId);
+    }
+
+    @Override
+    public void chargeCustomer(String customerId) {
+        logger.info("✅ ACTIVITY: Charging customer {}...", customerId);
+    }
 }

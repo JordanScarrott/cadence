@@ -2,6 +2,5 @@
 /app/src/main/java/com/example/cadence/workflow/SignupWorkflow.java
 /app/src/main/java/com/example/cadence/CadenceApplication.java
 /app/src/main/java/com/example/cadence/controller/SignupController.java
-/app/src/main/java/com/example.cadence.activity/SignupActivities.java
 /app/src/main/java/com/example/cadence/activity/SignupActivitiesImpl.java
 /app/src/main/java/com/example/cadence/workflow/SignupWorkflowImpl.java
