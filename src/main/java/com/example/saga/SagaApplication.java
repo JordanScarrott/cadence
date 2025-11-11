@@ -1,15 +1,13 @@
-package com.example.cadence;
+package com.example.saga;
 
-import io.temporal.spring.boot.EnableTemporal;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-@EnableTemporal
-public class CadenceApplication {
+public class SagaApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(CadenceApplication.class, args);
+        SpringApplication.run(SagaApplication.class, args);
     }
 
 }

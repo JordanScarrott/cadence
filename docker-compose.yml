@@ -1,14 +1,10 @@
-version: '3.8'
+version: "3.8"
+
 services:
-  temporal:
-    image: temporalio/auto-setup:latest
+  cadence:
+    image: uber/cadence-server:master-auto-setup
     ports:
-      - "7233:7233" # gRPC
-      - "8080:8080" # Web UI
-    environment:
-      - DB=sqlite3
-      - TEMPORAL_NAMESPACE=default
-      - TEMPORAL_TLS_SERVER_NAME=temporal
-      - TEMPORAL_TLS_CA_CERT_PATH=/etc/temporal/certs/ca.pem
-      - TEMPORAL_TLS_CERT_PATH=/etc/temporal/certs/cluster.pem
-      - TEMPORAL_TLS_KEY_PATH=/etc/temporal/certs/cluster.key
+      - "7933:7933" # gRPC
+      - "8088:8088" # Web UI
+    volumes:
+      - ./cadence_data:/var/lib/cadence
